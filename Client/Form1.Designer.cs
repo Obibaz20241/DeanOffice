@@ -32,6 +32,7 @@
             comboBox1 = new ComboBox();
             label1 = new Label();
             label2 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // listBox1
@@ -69,11 +70,22 @@
             label2.TabIndex = 3;
             label2.Text = "Список студентів";
             // 
+            // button1
+            // 
+            button1.Location = new Point(145, 251);
+            button1.Name = "button1";
+            button1.Size = new Size(146, 69);
+            button1.TabIndex = 4;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(comboBox1);
@@ -90,5 +102,6 @@
         private ComboBox comboBox1;
         private Label label1;
         private Label label2;
+        private Button button1;
     }
 }
